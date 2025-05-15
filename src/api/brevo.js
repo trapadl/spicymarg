@@ -171,7 +171,7 @@ export async function updateContactStage(email, stage, guestInfo, lastStageDate 
   if (stage === 2 || stage === 3) {
     const visitTypeForLink = stage === 2 ? 'icey-margarita' : 'free-cocktail';
     const token = btoa(`${guestInfo.guestId}|${guestInfo.fullName}`);
-    attributes.COUPON_LINK_PATH = `https://trapadl.github.io/spicymarg/confirm/${token}?type=${visitTypeForLink}`;
+    attributes.COUPON_LINK_PATH = `https://spicymarg.netlify.app/confirm/${token}?type=${visitTypeForLink}`;
     attributes.VISIT_TYPE_FOR_COUPON = visitTypeForLink;
     attributes.REVIEW_LINK = "https://g.co/kgs/RFM6TGv"; 
   } else {

@@ -80,7 +80,7 @@ export default function LandingForm() {
         GUEST_ID: newGuestId,
         // Add these crucial attributes for reminders:
         VOUCHER_LINK: voucherLink,
-        COUPON_LINK_PATH: `https://trapadl.github.io/spicymarg/voucher?token=${voucherToken}`,
+        COUPON_LINK_PATH: `https://spicymarg.netlify.app/voucher?token=${voucherToken}`,
       };
       console.log('[LandingForm] Attributes for initial Brevo contact update:', JSON.stringify(attributesForBrevo));
       await updateContact(email, attributesForBrevo, [brevoListIdForNewSignups]);
