@@ -1,0 +1,465 @@
+[
+  {
+    "result": {
+      "columns": [
+        {
+          "table_name": "funnel_metrics",
+          "column_name": "total_leads",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_metrics",
+          "column_name": "claimed_vouchers",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_metrics",
+          "column_name": "first_visits",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_metrics",
+          "column_name": "second_visits",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_metrics",
+          "column_name": "third_visits",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_metrics",
+          "column_name": "stage0_conv_pct",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_metrics",
+          "column_name": "stage1_conv_pct",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_metrics",
+          "column_name": "stage2_conv_pct",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_metrics",
+          "column_name": "stage3_conv_pct",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_metrics",
+          "column_name": "overall_conv_pct",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_profitability",
+          "column_name": "month",
+          "data_type": "date",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_profitability",
+          "column_name": "leads",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_profitability",
+          "column_name": "vouchers_claimed",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_profitability",
+          "column_name": "first_visits",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_profitability",
+          "column_name": "second_visits",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_profitability",
+          "column_name": "third_visits",
+          "data_type": "bigint",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_profitability",
+          "column_name": "stage0_ad_spend",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_profitability",
+          "column_name": "stage1_cogs",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_profitability",
+          "column_name": "stage2_sms_cost",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_profitability",
+          "column_name": "stage3_cogs",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_profitability",
+          "column_name": "total_revenue",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_profitability",
+          "column_name": "total_costs",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_profitability",
+          "column_name": "gross_profit",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_profitability",
+          "column_name": "cost_per_lead",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "funnel_profitability",
+          "column_name": "cost_per_visit",
+          "data_type": "numeric",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "guests",
+          "column_name": "id",
+          "data_type": "uuid",
+          "is_nullable": "NO",
+          "column_default": "gen_random_uuid()"
+        },
+        {
+          "table_name": "guests",
+          "column_name": "email",
+          "data_type": "text",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "table_name": "guests",
+          "column_name": "dob",
+          "data_type": "date",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "table_name": "guests",
+          "column_name": "phone",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "guests",
+          "column_name": "full_name",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "guests",
+          "column_name": "stage",
+          "data_type": "integer",
+          "is_nullable": "YES",
+          "column_default": "0"
+        },
+        {
+          "table_name": "guests",
+          "column_name": "created_at",
+          "data_type": "timestamp with time zone",
+          "is_nullable": "YES",
+          "column_default": "now()"
+        },
+        {
+          "table_name": "guests",
+          "column_name": "last_stage_at",
+          "data_type": "timestamp with time zone",
+          "is_nullable": "YES",
+          "column_default": "now()"
+        },
+        {
+          "table_name": "guests",
+          "column_name": "marketing_opt_in",
+          "data_type": "boolean",
+          "is_nullable": "YES",
+          "column_default": "true"
+        },
+        {
+          "table_name": "guests",
+          "column_name": "sms_opt_out",
+          "data_type": "boolean",
+          "is_nullable": "YES",
+          "column_default": "false"
+        },
+        {
+          "table_name": "monthly_metrics",
+          "column_name": "month",
+          "data_type": "date",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "table_name": "monthly_metrics",
+          "column_name": "stage0_ad_spend",
+          "data_type": "numeric",
+          "is_nullable": "NO",
+          "column_default": "0"
+        },
+        {
+          "table_name": "monthly_metrics",
+          "column_name": "stage1_cogs",
+          "data_type": "numeric",
+          "is_nullable": "NO",
+          "column_default": "0"
+        },
+        {
+          "table_name": "monthly_metrics",
+          "column_name": "stage2_sms_cost",
+          "data_type": "numeric",
+          "is_nullable": "NO",
+          "column_default": "0"
+        },
+        {
+          "table_name": "monthly_metrics",
+          "column_name": "stage3_cogs",
+          "data_type": "numeric",
+          "is_nullable": "NO",
+          "column_default": "0"
+        },
+        {
+          "table_name": "monthly_metrics",
+          "column_name": "total_revenue",
+          "data_type": "numeric",
+          "is_nullable": "NO",
+          "column_default": "0"
+        },
+        {
+          "table_name": "monthly_metrics",
+          "column_name": "notes",
+          "data_type": "text",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "phone_otps",
+          "column_name": "id",
+          "data_type": "uuid",
+          "is_nullable": "NO",
+          "column_default": "gen_random_uuid()"
+        },
+        {
+          "table_name": "phone_otps",
+          "column_name": "guest_id",
+          "data_type": "uuid",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "phone_otps",
+          "column_name": "otp_code",
+          "data_type": "character",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "table_name": "phone_otps",
+          "column_name": "expires_at",
+          "data_type": "timestamp with time zone",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "table_name": "phone_otps",
+          "column_name": "created_at",
+          "data_type": "timestamp with time zone",
+          "is_nullable": "YES",
+          "column_default": "now()"
+        },
+        {
+          "table_name": "visits",
+          "column_name": "id",
+          "data_type": "uuid",
+          "is_nullable": "NO",
+          "column_default": "gen_random_uuid()"
+        },
+        {
+          "table_name": "visits",
+          "column_name": "guest_id",
+          "data_type": "uuid",
+          "is_nullable": "YES",
+          "column_default": null
+        },
+        {
+          "table_name": "visits",
+          "column_name": "visit_number",
+          "data_type": "integer",
+          "is_nullable": "NO",
+          "column_default": null
+        },
+        {
+          "table_name": "visits",
+          "column_name": "created_at",
+          "data_type": "timestamp with time zone",
+          "is_nullable": "YES",
+          "column_default": "now()"
+        }
+      ],
+      "functions": [
+        {
+          "function_name": "generate_secure_token",
+          "return_type": "text",
+          "arguments": "bytes_length integer DEFAULT 32",
+          "schema_name": "public",
+          "function_definition": "\r\n  SELECT encode(gen_random_bytes(bytes_length), 'hex');\r\n"
+        },
+        {
+          "function_name": "update_guest_stage",
+          "return_type": "boolean",
+          "arguments": "p_guest_id uuid, p_new_stage integer",
+          "schema_name": "public",
+          "function_definition": "\r\nDECLARE\r\n  v_email TEXT;\r\nBEGIN\r\n  -- Update the guest's stage\r\n  UPDATE guests \r\n  SET stage = p_new_stage, \r\n      last_stage_at = now() \r\n  WHERE id = p_guest_id \r\n  RETURNING email INTO v_email;\r\n  \r\n  -- Return false if guest not found\r\n  IF v_email IS NULL THEN\r\n    RETURN FALSE;\r\n  END IF;\r\n  \r\n  -- In a real implementation, this would call Brevo via an Edge Function\r\n  -- For now, this is a placeholder\r\n  \r\n  RETURN TRUE;\r\nEND;\r\n"
+        },
+        {
+          "function_name": "verify_otp",
+          "return_type": "boolean",
+          "arguments": "p_guest_id uuid, p_otp_code text",
+          "schema_name": "public",
+          "function_definition": "\r\nDECLARE\r\n  v_valid BOOLEAN;\r\nBEGIN\r\n  -- Check if OTP is valid and not expired\r\n  SELECT EXISTS (\r\n    SELECT 1 \r\n    FROM phone_otps \r\n    WHERE guest_id = p_guest_id \r\n    AND otp_code = p_otp_code \r\n    AND expires_at > now()\r\n  ) INTO v_valid;\r\n  \r\n  -- If valid, delete the OTP (one-time use)\r\n  IF v_valid THEN\r\n    DELETE FROM phone_otps WHERE guest_id = p_guest_id;\r\n  END IF;\r\n  \r\n  RETURN v_valid;\r\nEND;\r\n"
+        }
+      ],
+      "triggers": [
+        {
+          "trigger_name": "update_objects_updated_at",
+          "event_manipulation": "UPDATE",
+          "event_object_table": "objects",
+          "action_statement": "EXECUTE FUNCTION storage.update_updated_at_column()"
+        },
+        {
+          "trigger_name": "tr_check_filters",
+          "event_manipulation": "INSERT",
+          "event_object_table": "subscription",
+          "action_statement": "EXECUTE FUNCTION realtime.subscription_check_filters()"
+        },
+        {
+          "trigger_name": "tr_check_filters",
+          "event_manipulation": "UPDATE",
+          "event_object_table": "subscription",
+          "action_statement": "EXECUTE FUNCTION realtime.subscription_check_filters()"
+        }
+      ],
+      "policies": [
+        {
+          "schema_name": "public",
+          "table_name": "guests",
+          "policy_name": "Enable insert for anonymous users",
+          "policy_type": "PERMISSIVE",
+          "roles": [
+            "public"
+          ],
+          "policy_condition": null,
+          "policy_check": "(auth.role() = 'anon'::text)"
+        },
+        {
+          "schema_name": "public",
+          "table_name": "guests",
+          "policy_name": "Enable read access for authenticated users",
+          "policy_type": "PERMISSIVE",
+          "roles": [
+            "public"
+          ],
+          "policy_condition": "(auth.role() = 'authenticated'::text)",
+          "policy_check": null
+        },
+        {
+          "schema_name": "public",
+          "table_name": "monthly_metrics",
+          "policy_name": "Authenticated users can manage metrics",
+          "policy_type": "PERMISSIVE",
+          "roles": [
+            "public"
+          ],
+          "policy_condition": "(auth.role() = 'authenticated'::text)",
+          "policy_check": null
+        },
+        {
+          "schema_name": "public",
+          "table_name": "phone_otps",
+          "policy_name": "Service role can manage OTPs",
+          "policy_type": "PERMISSIVE",
+          "roles": [
+            "public"
+          ],
+          "policy_condition": "(auth.role() = 'service_role'::text)",
+          "policy_check": null
+        },
+        {
+          "schema_name": "public",
+          "table_name": "visits",
+          "policy_name": "Service role can manage visits",
+          "policy_type": "PERMISSIVE",
+          "roles": [
+            "public"
+          ],
+          "policy_condition": "(auth.role() = 'service_role'::text)",
+          "policy_check": null
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,85 @@
+.button {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button variants */
+.primary-button {
+  background-color: #ff007f;
+  color: white;
+}
+
+.primary-button:hover {
+  background-color: #cc0066;
+}
+
+.secondary-button {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.secondary-button:hover {
+  background-color: #252525;
+}
+
+.confirm-button {
+  background-color: #00b300;
+  color: white;
+}
+
+.confirm-button:hover {
+  background-color: #009900;
+}
+
+.danger-button {
+  background-color: #ff3333;
+  color: white;
+}
+
+.danger-button:hover {
+  background-color: #e60000;
+}
+
+.text-button {
+  background-color: transparent;
+  color: #ff007f;
+  padding: 0;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.text-button:hover {
+  color: #cc0066;
+}
+
+/* Button sizes */
+.small-button {
+  padding: 8px 12px;
+  font-size: 0.8rem;
+}
+
+.medium-button {
+  padding: 12px 18px;
+  font-size: 1rem;
+}
+
+.large-button {
+  padding: 16px 24px;
+  font-size: 1.1rem;
+}
+
+/* Disabled state */
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}

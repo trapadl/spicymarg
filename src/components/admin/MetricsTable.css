@@ -1,0 +1,223 @@
+/* Metrics table styling */
+.metrics-table-container {
+    background-color: #121212;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .metrics-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .table-title {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .add-month-button {
+    background-color: #ff007f;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .add-month-button:hover {
+    background-color: #e1006f;
+  }
+  
+  .table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 15px;
+  }
+  
+  .metrics-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: white;
+  }
+  
+  .metrics-table th {
+    background-color: #1a1a1a;
+    text-align: left;
+    padding: 12px 15px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #aaa;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .metrics-table th:first-child {
+    border-top-left-radius: 8px;
+  }
+  
+  .metrics-table th:last-child {
+    border-top-right-radius: 8px;
+    text-align: right;
+  }
+  
+  .metrics-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #2a2a2a;
+    font-size: 0.95rem;
+  }
+  
+  .metrics-table tr:hover td {
+    background-color: #1e1e1e;
+  }
+  
+  .metrics-table tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+  }
+  
+  .metrics-table tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+  }
+  
+  /* Column specific styles */
+  .col-month {
+    min-width: 120px;
+  }
+  
+  .col-ad-spend,
+  .col-cogs,
+  .col-sms-cost {
+    color: #ff4d6d;
+    min-width: 90px;
+  }
+  
+  .col-revenue {
+    color: #45bbff;
+    min-width: 90px;
+  }
+  
+  .col-profit {
+    font-weight: 600;
+    min-width: 90px;
+  }
+  
+  .col-profit.positive {
+    color: #42f5b3;
+  }
+  
+  .col-profit.negative {
+    color: #ff4d6d;
+  }
+  
+  .col-actions {
+    text-align: right;
+    min-width: 100px;
+  }
+  
+  /* Table footer */
+  .metrics-table tfoot td {
+    background-color: #1a1a1a;
+    font-weight: 600;
+    border-bottom: none;
+  }
+  
+  /* Action buttons */
+  .action-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+  }
+  
+  .remove-button {
+    background-color: #333;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .remove-button:hover {
+    background-color: #444;
+  }
+  
+  /* Confirmation actions */
+  .confirm-actions {
+    display: flex;
+    gap: 6px;
+    justify-content: flex-end;
+  }
+  
+  .confirm-button {
+    background-color: #ff3333;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  
+  .confirm-button:hover {
+    background-color: #e60000;
+  }
+  
+  .cancel-button {
+    background-color: #333;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  
+  .cancel-button:hover {
+    background-color: #444;
+  }
+  
+  /* Notes toggler */
+  .notes-toggle {
+    background: none;
+    border: none;
+    color: #45bbff;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 5px;
+  }
+  
+  .notes-toggle:hover {
+    color: #73ceff;
+  }
+  
+  /* Notes section */
+  .notes-section {
+    background-color: #1e1e1e;
+    padding: 12px 15px;
+    border-left: 3px solid #45bbff;
+    margin-bottom: 10px;
+  }
+  
+  .notes-label {
+    font-weight: 600;
+    color: #aaa;
+    margin-right: 5px;
+  }
+  
+  .no-data-message {
+    text-align: center;
+    color: #aaa;
+    padding: 30px 0;
+  }
